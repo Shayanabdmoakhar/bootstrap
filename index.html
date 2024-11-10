@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+	<style>
+		body, html {
+		height: 100%;
+		}
+		/* the sections will not show the headers if not given padding top */
+		.section {
+			min-height: 100vh;
+			width: 100%;
+			padding-top: 65px;
+		}
+		/* making the hero section full height  */
+		.hero-full-height{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			min-height: 100vh;
+		}
+		
+		/* making the picture take the centered and take up the whole width of the section
+		Note: this will hide the welcome texts */
+		#cake-img{
+			object-fit: cover;
+			width: 100%;
+			height: 100%;
+		}
+		section:nth-child(even){
+		background-color:#eee;
+}
+.about-paragraph{
+	color: #878787;
+    text-shadow: 4px 1px #000000;
+	font-size: 2em;
+}
+	
+	</style>
+    <title>"ICS 118 | Lab 6 | TASTY Bakery | Shayan Abdmoakhar"</title>
+</head>
+<body>
+<!-- navr bar -->
+<nav id="main-nav" class="navbar navbar-dark bg-dark fixed-top navbar-expand-sm">
+	<!-- container fluid to have 100% width container -->
+   <div class="container-fluid">
+   <!-- adding the web page brand and a link to the top page -->
+		<a class="navbar-brand" href="#"> TASTY Bakery</a>
+	<!-- creating the button (humburger for the mobile) and target the div navbar-main to make it work-->
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-main">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbar-main">
+			<ul class="navbar-nav">
+				<li class="navbar-item"><a href="#about" class="nav-link">About</a></li>
+				<li class="navbar-item"><a href="#info"  class="nav-link">Info</a></li>
+				<li class="navbar-item"><a href="#products"  class="nav-link">Products</a></li>
+				<li class="navbar-item"><a href="#contacts"  class="nav-link">Contact</a></li>
+			</ul>
+		</div>
+   </div>
+</nav>
+<!--  welcome the user to our website -->
+<section class="px-4 py-5 text-center bg-dark text-secondary hero-full-height">
+	<img src="./images/Donut_in_black_background.png" alt="cake" class=" position-absolute top-0 bottom-0 right-0 left-0 m-auto" id="cake-img">
+	
+    <div class="z-1 col-lg-6 mx-auto">
+		<h1 class="display-1 fs-3em text-shadow-dark fw-bold">TASTY Baker</h1>
+        <p class="about-paragraph lead mb-4 fw-bold ">Appreciating the craftsmanship behind every loaf, pastry, and cake.
+        </p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <a class="btn btn-secondary btn-lg px-4 gap-3" href="#about">About</a>
+            <a class="btn btn-secondary btn-lg px-4" href="#contacts">Contact</a>
+        </div>
+    </div>
+</section>
+
+<section id="about" class="section">
+	<div class="container">
+		<h2>About Us</h2>
+		<p>
+			Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium 
+			doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore 
+			veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim 
+			ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia 
+			consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque 
+			porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit
+			, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam q
+			uaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corpori
+			s suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eu
+			m iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatu
+			r, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? At vero eos et acc
+			usamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum dele
+			niti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupidit
+			ate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id 
+			est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinct
+			io. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit qu
+			o minus id quod maxime placeat facere
+		</p>
+
+	</div>
+</section>
+<section id="info" class="section" >
+	<div class="container">
+		<h2>Information</h2>
+
+			<p class="p1"><strong>Website usage terms and conditions &ndash; sample template</strong></p>
+			<p class="p2">Welcome to our website. If you continue to browse and use this website, you are agreeing to comply with and be bound by the following terms and conditions of use, which together with our privacy policy govern [business name]&rsquo;s relationship with you in relation to this website. If you disagree with any part of these terms and conditions, please do not use our website.</p>
+			<p class="p2">The term &lsquo;[business name]&rsquo; or &lsquo;us&rsquo; or &lsquo;we&rsquo; refers to the owner of the website whose registered office is [address]. Our company registration number is [company registration number and place of registration]. The term &lsquo;you&rsquo; refers to the user or viewer of our website.</p>
+			<p class="p2">The use of this website is subject to the following terms of use:</p>
+			<ul>
+				<li class="p2">The content of the pages of this website is for your general information and use only. It is subject to change without notice.</li>
+				<li class="p2">This website uses cookies to monitor browsing preferences. If you do allow cookies to be used, the following personal information may be stored by us for use by third parties: [insert list of information].</li>
+				<li class="p2">Neither we nor any third parties provide any warranty or guarantee as to the accuracy, timeliness, performance, completeness or suitability of the information and materials found or offered on this website for any particular purpose. You acknowledge that such information and materials may contain inaccuracies or errors and we expressly exclude liability for any such inaccuracies or errors to the fullest extent permitted by law.</li>
+				<li class="p2">Your use of any information or materials on this website is entirely at your own risk, for which we shall not be liable. It shall be your own responsibility to ensure that any products, services or information available through this website meet your specific requirements.</li>
+				<li class="p2">This website contains material which is owned by or licensed to us. This material includes, but is not limited to, the design, layout, look, appearance and graphics. Reproduction is prohibited other than in accordance with the copyright notice, which forms part of these terms and conditions.</li>
+				<li class="p2">All trademarks reproduced in this website, which are not the property of, or licensed to the operator, are acknowledged on the website.</li>
+			</ul>
+		<button type="button" class="btn btn-primary">I Agree</button>
+	</div>
+</section>
+<section id="products" class="section">
+	<div class="container">
+		<h2>Products</h2>
+		<!--Creating 3 cards-->
+		<div class="row">
+			<div class="col-md-4 mb-5">
+				<div class="card">
+					<img class="card-img-top" src="./images/Macaron_trio.jpg" alt="Macarons">
+					<div class="card-body">
+						<h5 class="card-title">Macarons</h5>
+						<p class="card-text">The Most TASTY Macarons from $25</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 mb-5">
+				<div class="card">
+					<img class="card-img-top" src="./images/Doughnuts_5.jpg" alt="Doughnuts">
+					<div class="card-body">
+						<h5 class="card-title">Doughnuts</h5>
+						<p class="card-text">The Most TASTY Doughnuts. 12 for just $25</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 mb-5">
+				<div class="card">
+					<img class="card-img-top" src="./images/Three_of_white_wedding_cakes.jpg" alt="Cakes">
+					<div class="card-body">
+						<h5 class="card-title">Cakes</h5>
+						<p class="card-text">The Most TASTY Cakes from $25</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="contacts" class="section">
+	<div class="container">
+		<h2>Contact Us</h2>
+		<form>
+			<div class="form-group">
+				<label for="email">Email Address:</label>
+				<input name="email-address" id="email" type="email" placeholder="You@yourEmail.com" class="form-control" required>
+			</div>
+			<div class="from-group">
+				<label for="name">Name:</label>
+				<input id="name" type="text" placeholder="Your Name" name="first-last-name" class="form-control" required >
+			</div>
+			<div class="form-group">
+			<button class="btn btn-secondary mt-2 width-20 " >Submit Information</button>
+			</div>
+		</form>
+	</div>
+</section>
+<footer class="py-5 text-center text-secondary bg-dark">
+	<div class="contaienr">
+		<p>Images used with the products sections were licensed for use using the Creative Commons License.
+			Licenses can be found at:
+		</p>
+		<ul class="list-unstyled">
+			<li><a href="https://commons.wikimedia.org/wiki/File:Doughnuts_5.jpg" target="_blank">Doughnuts</a></li>
+			<li><a href="https://commons.wikimedia.org/wiki/File:Three_of_white_wedding_cakes.jpg">Cakes</a></li>
+			<li><a href="https://commons.wikimedia.org/wiki/File:Macaron_trio.jpg">Macarons</a></li>
+			<li><a href="https://commons.wikimedia.org/wiki/Category:Toroidal_doughnuts#/media/File:Donut_in_black_background.png"></a></li>
+		</ul>
+	</div>
+
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
